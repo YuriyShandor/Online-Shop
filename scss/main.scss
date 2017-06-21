@@ -138,7 +138,7 @@ header {
       a {
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 14px;
         color: #656565;
       }
@@ -180,5 +180,63 @@ header {
       margin-right: 9px;
     }
   }
+}
 
+.baner {
+  background: url(../img/baner.png) no-repeat center / cover;
+  height: 475px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#left-nav {
+  position: absolute;
+  left: -67px;
+}
+
+#right-nav {
+  position: absolute;
+  right: -67px;
+}
+
+.aluminium-exper {
+  margin-left: 48px;
+  transform: translateY(-15px);
+  .aluminium {
+    height: 47px;
+    width: 285px;
+    background: rgba(102, 98, 89, 0.5);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-weight: 300;
+      font-size: 30px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+
+  .exper {
+    margin-top: 3px;
+    height: 47px;
+    width: 329px;
+    background: rgba(102, 98, 89, 0.5);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-weight: 800;
+      font-size: 28px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
 }
