@@ -3,9 +3,6 @@
   /*border: 1px solid red;*/
 }
 
-html {
-  height: 100%;
-}
 
 .container {
   margin: 0 auto;
@@ -239,4 +236,90 @@ header {
       text-transform: uppercase;
     }
   }
+}
+
+.all-content {
+  display: flex;
+  margin-top: 47px;
+  margin-bottom: 200px;
+}
+
+.content{
+  margin-right: auto;
+  width: 760px;
+}
+
+
+.charpet {
+
+
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #635f57;
+    text-transform: uppercase;
+  }
+
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+  .product {
+    height: 313px;
+    width: 238px;
+    border: 1px solid #eeeeee;
+    box-shadow: 2px 2px 5px 2px #f5f5f5;
+    display: flex;
+    margin-bottom: 25px;
+
+    .glass {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 228px;
+      width: 216px;
+      background: #eff1f0;
+      margin: 8px;
+    }
+    .title-koshuk {
+      display: -webkit-inline-flex;
+      display: -ms-inline-flex;
+      display: inline-flex;
+
+      .title {
+        margin-top: 7px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        color: #464148;
+      }
+
+      .price {
+        font-size: 18px;
+        font-weight: 400;
+        color: #7db122;
+      }
+
+      .previous-price {
+        font-size: 14px;
+        font-weight: 400;
+        color: #464148;
+        text-decoration: line-through;
+      }
+      }
+
+      .koshuk {
+        margin-left: 10px;
+        margin-top: 2px;
+      }
+    }
 }
