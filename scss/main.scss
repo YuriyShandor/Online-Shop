@@ -90,7 +90,8 @@ header {
 
 .account {
   display: flex;
-  width: auto;
+  justify-content: space-between;
+  width: 358px;
   margin-left: auto;
 
   a {
@@ -98,7 +99,7 @@ header {
     font-size: 13px;
     font-weight: 400;
     color: #fff;
-    padding: 0 15px 0 15px;
+    padding-right: 15px;
     border-right: 1px solid #bff2ff;
   }
 
@@ -598,5 +599,46 @@ header {
 
   img {
    margin-right: 5px;
+  }
+}
+
+footer {
+  height: 61px;
+  width: 100%;
+  background: #0b4b5a;
+}
+
+.footer {
+  height: 61px;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 3px;
+
+  span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #8adcf0;
+  }
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  width: 447px;
+  margin-left: auto;
+
+  a {
+    border-right: 1px solid #39a0b9;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #8adcf0;
+    padding-right: 15px;
+  }
+
+  a:last-child {
+    padding-right: 0;
+    border-right: none;
   }
 }
