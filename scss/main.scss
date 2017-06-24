@@ -323,3 +323,134 @@ header {
       }
     }
 }
+
+.left {
+  width: 236px;
+  margin-left: auto;
+  margin-top: 22px;
+}
+
+.first-left {
+  display: flex;
+  flex-direction: column;
+  height: 485px;
+  width: 233px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 2px 2px 5px 2px #f5f5f5;
+}
+
+.girl {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: url(../img/girl.png) no-repeat center;
+  border-top: 3px solid #4cb1ca;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  height: 446px;
+  width: 233px;
+  padding: 13px;
+
+  .feat {
+    margin-top: 20px;
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  }
+
+  .button {
+    margin-top: auto;
+    margin-bottom: 16px;
+    width: 132px;
+    height: 44px;
+    background: #4cb1ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}
+
+.green {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 5px;
+
+  .gr-but {
+    margin: 7px;
+    background: #7db122;
+    width: 11px;
+    height: 11px;
+    border-radius: 7px;
+  }
+}
+
+.second-left {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 3px solid #4cb1ca;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 2px 2px 5px 2px #f5f5f5;
+  margin-top: 30px;
+  height: 282px;
+  width: 233px;
+  padding: 13px;
+
+  h1 {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  hr {
+    width: 85px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  input {
+    height: 28px;
+    width: 185px;
+  }
+
+  input[type=submit] {
+    width: 111px;
+    height: 44px;
+    color: #fff;
+    background: #7eb123;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
