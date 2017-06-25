@@ -156,6 +156,13 @@ header {
       color: #b7b7b7;
     }
 
+    input::placeholder {
+      padding-left: 7px;
+      font-size: 13px;
+      font-weight: 400px;
+      color: #b7b7b7;
+    }
+
     input[type="submit"] {
       background: url(../img/search.png) no-repeat;
       border: none;
