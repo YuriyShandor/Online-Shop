@@ -29,7 +29,7 @@ body {
 header {
   background-color: #4cb1ca;
   height: 43px;
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
 }
@@ -277,6 +277,10 @@ header {
     display: flex;
     margin-bottom: 25px;
 
+    .status {
+      position: absolute;
+    }
+
     .glass {
       display: flex;
       justify-content: center;
@@ -285,7 +289,23 @@ header {
       width: 216px;
       background: #eff1f0;
       margin: 8px;
+
     }
+
+    .new-product {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(11px, -4px);
+    }
+
+    .sale-product {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-3px, -4px);
+    }
+
     .title-koshuk {
       display: -webkit-inline-flex;
       display: -ms-inline-flex;
@@ -392,13 +412,23 @@ header {
   margin-top: auto;
   margin-bottom: 5px;
 
-  .gr-but {
-    margin: 7px;
-    background: #7db122;
-    width: 11px;
-    height: 11px;
-    border-radius: 7px;
-  }
+
+}
+
+.gr-but {
+  margin: 7px;
+  background: #7db122;
+  width: 11px;
+  height: 11px;
+  border-radius: 7px;
+}
+
+.bl-but {
+  margin: 7px;
+  background: #4cb1ca;
+  width: 11px;
+  height: 11px;
+  border-radius: 7px;
 }
 
 .second-left {
@@ -640,5 +670,11 @@ footer {
   a:last-child {
     padding-right: 0;
     border-right: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+	.content {
+    body: 480px;
   }
 }
