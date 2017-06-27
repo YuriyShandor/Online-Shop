@@ -43,7 +43,7 @@ header {
 .forms {
   display: flex;
   justify-content: space-between;
-  width: 245px;
+  width: 254px;
 
   span {
     color: #b2eaf8;
@@ -157,7 +157,7 @@ header {
     }
 
     input::placeholder {
-      padding-left: 7px;
+      padding-left: 15px;
       font-size: 13px;
       font-weight: 400px;
       color: #b7b7b7;
