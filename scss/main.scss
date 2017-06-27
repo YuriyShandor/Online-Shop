@@ -43,7 +43,7 @@ header {
 .forms {
   display: flex;
   justify-content: space-between;
-  width: 254px;
+  width: 245px;
 
   span {
     color: #b2eaf8;
@@ -154,10 +154,10 @@ header {
       font-size: 13px;
       font-weight: 400px;
       color: #b7b7b7;
+      padding-left: 7px;
     }
 
     input::placeholder {
-      padding-left: 15px;
       font-size: 13px;
       font-weight: 400px;
       color: #b7b7b7;
@@ -188,7 +188,7 @@ header {
 }
 
 .baner {
-  background: url(../img/baner.png) no-repeat center / cover;
+  background: url(../img/baner-glass.png) no-repeat center / cover;
   height: 475px;
   width: 100%;
   display: flex;
