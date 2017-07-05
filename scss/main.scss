@@ -23,7 +23,6 @@ body {
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 header {
@@ -66,6 +65,7 @@ header {
     background-color: inherit;
     padding: 0;
     width: 75px;
+    cursor: pointer;
   }
   }
 
@@ -84,6 +84,7 @@ header {
     background-color: inherit;
     padding: 0;
     width: 60px;
+    cursor: pointer;
   }
   }
 }
@@ -101,6 +102,11 @@ header {
     color: #fff;
     padding-right: 15px;
     border-right: 1px solid #bff2ff;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: red;
   }
 
   a:last-child {
@@ -139,6 +145,11 @@ header {
         font-weight: 800;
         font-size: 14px;
         color: #656565;
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: red;
       }
     }
   }
@@ -174,6 +185,7 @@ header {
 
     img {
       padding-right: 4px;
+      cursor: pointer;
     }
 
     span {
@@ -198,11 +210,13 @@ header {
 #left-nav {
   position: absolute;
   left: -67px;
+  cursor: pointer;
 }
 
 #right-nav {
   position: absolute;
   right: -67px;
+  cursor: pointer;
 }
 
 .aluminium-exper {
@@ -348,6 +362,11 @@ header {
       .koshuk {
         margin-left: 10px;
         margin-top: 2px;
+        cursor: pointer;
+      }
+
+      .koshuk:hover {
+        opacity: 0.9;
       }
     }
 }
@@ -409,7 +428,16 @@ header {
       font-size: 14px;
       font-weight: 400;
       color: #fff;
+      cursor: pointer;
     }
+
+    a:hover {
+      color: red;
+    }
+  }
+
+  .button:hover {
+    opacity: 0.9;
   }
 }
 
@@ -418,8 +446,6 @@ header {
   justify-content: center;
   margin-top: auto;
   margin-bottom: 5px;
-
-
 }
 
 .gr-but {
@@ -491,6 +517,10 @@ header {
     margin-top: 15px;
     margin-bottom: 20px;
   }
+
+  input[type=submit]:hover {
+    opacity: 0.9;
+  }
 }
 
 #order {
@@ -561,6 +591,7 @@ header {
     margin-top: 5px;
     width: 47px;
     height: 23px;
+    cursor: pointer;
   }
 
   .members {
@@ -577,6 +608,7 @@ header {
     img {
       height: 49px;
       width: 49px;
+      cursor: pointer;
     }
   }
 }
@@ -589,8 +621,9 @@ header {
 
   img {
     height: 43px;
-    width: 43px;
+    width: auto;
     margin-right: 14px;
+    cursor: pointer;
   }
 
   .blue {
@@ -636,6 +669,7 @@ header {
 
   img {
    margin-right: 5px;
+   cursor: pointer;
   }
 }
 
@@ -672,16 +706,15 @@ footer {
     font-weight: 400;
     color: #8adcf0;
     padding-right: 15px;
+    cursor: pointer;
   }
 
   a:last-child {
     padding-right: 0;
     border-right: none;
   }
-}
 
-@media screen and (max-width: 480px) {
-	.content {
-    body: 480px;
+  a:hover {
+    color: red;
   }
 }
