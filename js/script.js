@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $(document).ready(function() {
+  $('select').niceSelect();
+  });
+
   $(".gr-but").click(function(){
     $(".gr-but").removeClass("bl-but");
     $(this).addClass("bl-but");

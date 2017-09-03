@@ -1,3 +1,5 @@
+@import 'nice-select';
+
 * {
   box-sizing: border-box;
   /*border: 1px solid red;*/
@@ -34,58 +36,66 @@ header {
 }
 
 .forms-account {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   width: 1024px;
+  height: 43px;
 }
 
 .forms {
   display: flex;
-  justify-content: space-between;
-  width: 245px;
+  height: inherit;
 
-  span {
-    color: #b2eaf8;
-    font-weight: 400;
-    font-size: 13px;
-  }
+  form {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    margin-right: 25px;
 
-  .select-box-1 {
-    display: inline-flex;
-    overflow: hidden;
-    background: url(../img/select.png) no-repeat right;
-    padding: 0;
-    width: 60px;
+    .select__title {
+      color: #b2eaf8;
+      font-weight: 400;
+      font-size: 13px;
+      margin-right: 8px;
+      cursor: default;
+    }
 
-   select {
-    color: #fff;
-    font-weight: 400;
-    font-size: 13px;
-    border: none;
-    background-color: inherit;
-    padding: 0;
-    width: 75px;
-    cursor: pointer;
-  }
-  }
+    .select-box_1 {
+      color: #fff;
+      font-weight: 400;
+      font-size: 13px;
+      border: none;
+      background: none;
+      padding-left: 0px;
+      padding-right: 0px;
 
-  .select-box-2 {
-    display: inline-flex;
-    overflow: hidden;
-    background: url(../img/select.png) no-repeat right;
-    padding: 0;
-    width: 45px;
+      &:after {
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        right: -10px;
+      }
 
-   select {
-    color: #fff;
-    font-weight: 400;
-    font-size: 13px;
-    border: none;
-    background-color: inherit;
-    padding: 0;
-    width: 60px;
-    cursor: pointer;
-  }
+      .list {
+        background-color: #4cb1ca;
+      }
+
+      .option {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        &:hover {
+          background-color: darken(#4cb1ca, 5%);
+        }
+
+        &.focus, &.selected.focus {
+          background-color: darken(#4cb1ca, 25%);
+        }
+
+        &.selected {
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
 
@@ -159,13 +169,14 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    input {
+    input[type="search"] {
       width: 173px;
       height: 29px;
       font-size: 13px;
       font-weight: 400px;
       color: #b7b7b7;
       padding-left: 7px;
+      outline-color: #4cb1ca;
     }
 
     input::placeholder {
@@ -181,6 +192,8 @@ header {
       width: 15px;
       height: 15px;
       transform: translateX(-25px);
+      outline: none;
+      cursor: pointer;
     }
 
     img {
