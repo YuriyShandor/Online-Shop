@@ -9,13 +9,19 @@ $(document).ready(function(){
     slidesToScroll: 1,
     nextArrow: $(".banner-slider__nav_right"),
     prevArrow: $(".banner-slider__nav_left"),
+    autoplay: true,
+    autoplaySpeed: 5000,
   });
 
-  $(".gr-but").click(function(){
-    $(".gr-but").removeClass("bl-but");
-    $(this).addClass("bl-but");
-    /*var index = $(this).index()+1;
-    $(".content").removeClass("show");
-    $(".content:nth-child("+ index +")").addClass("show");*/
+  $('.left-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    dotsClass: "left-slider__nav-dots",
+    autoplay: true,
+    autoplaySpeed: 5000,
   });
+
+
+
 });
